@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "npx tsx watch src/server.ts",
     "format": "prettier --write src/**/*.ts",
-    "postinstall": "prisma skills sync || exit 0"
+    "postinstall": "prisma skills sync || exit 0",
+    "start": "node dist/src/server.js",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
